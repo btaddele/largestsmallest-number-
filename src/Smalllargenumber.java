@@ -2,44 +2,44 @@ import java.util.Scanner;
 
 public class Smalllargenumber {
     public static void main(String[] args) {
-        int x;
-        int y;
-        int z;
+        int num1;
+        int num2;
+        int num3;
 
-        System.out.println("Input the 1st number: ");
+        System.out.print("Input the 1st number: ");
         Scanner input = new Scanner(System.in);
-        x = input.nextInt();
+        num1 = input.nextInt();
 
 
         System.out.print("Input the 2nd number: ");
-        y = input.nextInt();
+        num2 = input.nextInt();
 
         System.out.print("Input the 3rd number: ");
-        z = input.nextInt();
+        num3 = input.nextInt();
 
 
-        if (x > y && x > z) {
+        if (num1 > num2 && num1 > num3) {
 
-            System.out.println("The largest number is " + x);
-            if (y > z) {
-                System.out.println("The smallest number is " + z);
+            System.out.println("The largest number is " + num1);
+            if (num2 > num3) {
+                System.out.println("The smallest number is " + num3);
             } else {
-                System.out.println("The smallest number is " + y);
+                System.out.println("The smallest number is " + num2);
             }
-        } else if (y > x && y > z) {
+        } else if (num2 > num1 && num2 > num3) {
 
-            System.out.println("The largest number is " + y);
-            if (x > z) {
-                System.out.println("The smallest number is " + x);
+            System.out.println("The largest number is " + num2);
+            if (num1 > num3) {
+                System.out.println("The smallest number is " + num3);
             } else {
-                System.out.println("The smallest number is " + z);
+                System.out.println("The smallest number is " + num1);
             }
-        } else if (z > x && z > y) {
-            System.out.println("The largest number is " + z);
-            if (y > x) {
-                System.out.println("The smallest number is " + x);
+        } else if (num3 > num1 && num3 > num2) {
+            System.out.println("The largest number is " + num3);
+            if (num2 > num1) {
+                System.out.println("The smallest number is " + num1);
             } else {
-                System.out.println("The smallest number is " + y);
+                System.out.println("The smallest number is " + num2);
             }
         }else{
             System.out.println("The numbers are equal");
